@@ -1,0 +1,506 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body, html {
+  position: relative;
+  margin: 0; 
+  overflow-x: hidden;
+  font-family: 'Rubik';
+  height: 100vh;
+  width: 100%;
+}
+
+.title, .description, .caption{
+  background: transparent;
+}
+
+p{
+  font-size: 1.7vh;
+  font-weight: 400;
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 500;
+  color: hsl(271, 36%, 24%);
+}
+h3{
+  font-size: 25px;
+  font-weight: 400;
+  color: hsl(270, 7%, 64%);
+}
+
+h5{
+  font-size: 2.1vh;
+}
+h6{
+  font-size: 1.7vh;
+}
+
+i{
+  font-size: min(1.5vh,1.5vw)!important;
+  color: #fff;
+}
+
+
+/* ==========================================
+UTILITIES
+========================================== */
+
+
+.row{
+  width: 100%;
+}
+
+.m-top{
+  margin-top: .7vh;
+}
+
+.m-bottom{
+  margin-bottom: .7vh;
+}
+
+.m-both{
+  margin: .7vh 0 .7vh 0;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.h-100{
+  height: 100%;
+}
+
+
+/* ==========================================
+MAIN
+========================================== */
+
+.main{
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ==========================================
+PHONE
+========================================== */
+
+.phone{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.phone-wrapper{
+  flex-direction: column;
+  background: hsl(270, 20%, 96%);
+  /* border-radius: 40px; */
+  overflow: hidden;
+  aspect-ratio: 2/4;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  border-radius: 10%/5%!important;
+  border:15px solid white;
+  -webkit-filter: drop-shadow(1.4vw 1vh 1.9vw rgb(196, 194, 194));
+  filter: drop-shadow(1.4vw 1vh 1.9vw rgb(196, 194, 194));
+}
+
+/* ==========================================
+HEADER
+========================================== */
+
+.header{
+  margin-top: 0px;
+  height: 13%;
+  background-image: linear-gradient(
+  90deg,
+  hsl(264deg 100% 61%) 0%,
+  hsl(293deg 100% 63%) 100%
+);
+  border-bottom: 1px solid hsl(289, 100%, 72%);
+  border-radius: 0 0 10px 10px;
+}
+
+.notch{
+  background: #fff;
+  display: block;
+  /* height: 15px; */
+  height: 25%;
+  margin: 0 25% 0 25%;
+  border-radius: 0 0 15px 15px;
+}
+
+.client-info{
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px 0 10px;
+  height: 50%;
+}
+
+.client-info i{
+  margin-right: 15px;
+}
+
+.avatar{
+  justify-content: start;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.image-wrapper{
+  display: inline-flex;
+  max-height: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.avatar .image-wrapper{
+  border-radius: 50%;
+}
+
+.avatar .image-wrapper img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.name{
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+  /* width: 60%; */
+  color: white;
+}
+
+.name h5{
+  margin: 1%;
+  opacity: 80%;
+
+}
+.name h6{
+  margin: 1%;
+  opacity: 50%;
+}
+
+.details i{
+  width: auto;
+}
+
+/* ==========================================
+PHONE BODY
+========================================== */
+
+.phone-content{
+  margin: 0 10px;
+  max-height: 80%;
+  flex-direction: column;
+}
+
+.received-message{
+  padding-right: 40%;
+  height: 100%;
+}
+
+.received-message > .message{
+  margin-right: auto;
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(276, 100%, 95%);
+  border-radius: 15px 15px 15px 2px;
+}
+
+.sent-message{
+  padding-left: 33%;
+}
+
+.sent-message > .message{
+  margin-left: auto;
+  color: hsl(271, 15%, 43%);
+  background: #fff;
+  border-radius: 15px 15px 0px 15px;
+
+}
+
+.message{
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.message p{
+  margin: 5px 0;
+}
+
+.sent-images{
+  justify-content: end;
+  height: 15%;
+}
+
+.sent-images .image-wrapper{
+  border-radius: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: none;
+  width: auto;
+  max-width: unset;
+}
+
+.sent-images .image-wrapper:first-child{
+  margin-left: 0px;
+}
+
+.sent-images .image-wrapper:last-child{
+  margin-right: 0px;
+}
+
+.sent-images .image-wrapper img{
+  height: auto;
+}
+
+.booking{
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-right: 25%;
+  width: auto;
+  background-image: linear-gradient(
+    90deg,
+    hsl(293deg 100% 63%) 0%,
+    hsl(264deg 100% 61%) 100%
+  );
+  border-radius: 15px 15px 15px 5px;
+  border: 1px solid hsl(289, 100%, 72%);
+}
+
+.booking-checkbox{
+  height: 100%;
+  aspect-ratio: 1;
+  border: 1px solid white;
+  opacity: 40%;
+  border-radius: 50%;
+}
+
+.booking-text{
+  padding-left: 10px;
+  width: 70%;
+  opacity: 70%;
+  color: white;
+}
+
+.booking-price{
+  width: 20%;
+  color: white;
+}
+
+.chat{
+  justify-content: space-between;
+  align-items: center;
+  height: 7%!important;
+  background: #fff;
+  padding: 2% 2% 2% 10%;
+  border-radius: 25px/50%;
+  color: hsl(270, 20%, 80%);
+  margin: 2%;
+}
+
+.type-message p{
+  margin: 0px;
+}
+
+.send-button{
+  width: 10%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.send-button i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(271, 36%, 24%);
+  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* ==========================================
+RESPONSIVE DESIGN
+========================================== */
+
+/* MOBILE */
+@media only screen and (max-width: 767px){
+  i{
+    font-size: min(4vh,4.5vw)!important;
+  }
+  .bubble-container{
+    position: absolute;
+  }
+  .purple{
+    background-image: linear-gradient(
+      45deg,
+      hsl(264, 100%, 61%),
+      hsl(293, 100%, 63%)
+    );
+    background-size: 100% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    border-radius: 0% 0% 100%/50% 0;
+    width: 50%;
+    height: 80%;
+    top: 0px;
+    left: 0px;
+  }
+  .grey{
+    background: hsl(270, 20%, 98%);
+    float: right;
+    background-size: 100% 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border-radius: 100%/50% 0% 0% 0;
+    width: 50%;
+    height: 50%;
+  }
+
+  .content{
+    background: transparent;
+    z-index: 999;
+  }
+  .phone{
+    padding: 20% 0;
+  }
+  .phone-wrapper{
+    border-radius: 30px;
+  }
+  .caption{
+    text-align: center;
+    margin-bottom: 60px;
+    width: 100%;
+    padding: 0 30px;
+    background: transparent;
+  }
+  .description{
+    text-align: center;
+  }
+
+  p{
+    font-size: min(1.5vh,2.9vw);
+  }
+  h1{
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 1%;
+  }
+  h3{
+    line-height: 1.5;
+    opacity: 60%;
+    margin-top: 2%;
+  }
+  h5{
+    font-size: min(1.5vh,3vw);
+  }
+  h6{
+    font-size: min(1.2vh,2.7vw);
+  }
+}
+
+
+/* DESKTOP  */
+@media only screen and (min-width: 768px) {
+  .bubble-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+  }
+  .purple{
+    background-image: linear-gradient(
+      45deg,
+      hsl(264, 100%, 61%),
+      hsl(293, 100%, 63%)
+    );
+    background-size: 100% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    border-radius: 0% 0% 50% 50%/25%;
+
+    margin-left: -5%;
+    width: 25%;
+    height: 80%;
+  }
+  .grey{
+    background: hsl(270, 20%, 98%);
+    background-size: 100% 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border-radius: 50% 50%/25% 0% 0;
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-self: end;
+  }
+
+  .caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    text-align: left;
+  }
+  .caption-content{
+    padding: 20px;
+  }
+  .phone{
+    width: 40%;
+    padding: auto;
+  }
+  .phone-wrapper{
+    -webkit-filter: drop-shadow(.2vw 1vh 1.9vw rgb(196, 194, 194));
+    filter: drop-shadow(.2vw 1vh 1.9vw rgb(196, 194, 194));
+  }
+
+  .content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 75%;
+    max-width: 1600px;
+    height: 70vh;
+    z-index: 999;
+  }
+
+  p{
+    font-size: min(1.3vh,.8vw);
+  }
+  
+  h1{
+    font-size: min(4vh,4vw)!important;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 1%;
+  }
+  h3{
+    font-size: min(1.9vh,1.9vw);
+    line-height: 1.5;
+    opacity: 60%;
+    margin-top: 2%;
+  }
+  
+  h5{
+    font-size: min(1.5vh,.9vw);
+  }
+  h6{
+    font-size: min(1.2vh,.8vw);
+  }
+}
